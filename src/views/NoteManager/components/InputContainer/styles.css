@@ -1,0 +1,196 @@
+/* Contenedor completo */
+
+.sidebar-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60vh;
+    height: 100vh;
+    background-color: #e0e4ffd5;
+}
+
+/*=================================================================*/
+
+/* Título del encabezado */
+
+.sidebar-head-title {
+    font-size: 3rem;
+    padding-left: 2rem;
+    margin: 1.5rem 0rem;
+}
+
+/*=================================================================*/
+
+/* Contenedor de crear/editar notas */
+
+.sidebar-new-note-box {
+    margin: 0 0 0 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.sidebar-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.sidebar-title-input {
+    margin-top: 0.2rem;
+    padding: 0.8rem;
+    font-size: 1.6rem;
+    border-width: 0;
+    border-radius: 0.6rem;
+}
+
+.sidebar-title-input:hover {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.197);
+}
+
+.sidebar-text-field {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.sidebar-text-field-input {
+    margin-top: 0.2rem;
+    padding: 0.8rem;
+    height: 15rem;
+    resize: none;
+    font-size: 1.6rem;
+    border-width: 0;
+    border-radius: 0.6rem;
+}
+
+.sidebar-text-field-input:hover {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.197);
+}
+
+/*=================================================================*/
+
+/* Botones de la barra lateral */
+
+.sidebar-buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sidebar-button-new {
+    color: rgb(255, 255, 255);;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+    align-self: flex-start;
+    border: none;
+    border-radius: 1.4rem;
+    background-color: #00d111;
+}
+
+.sidebar-button-new:hover {
+    background-color: #18b600;
+    cursor: pointer;
+}
+
+
+.sidebar-button-edit {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+    align-self: flex-start;
+    border: none;
+    border-radius: 1.4rem;
+    background-color: #3f63ff;
+}
+
+.sidebar-button-edit:hover {
+    background-color: #0020d3;
+    cursor: pointer;
+}
+
+.cancel-button {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+    align-self: flex-start;
+    border: none;
+    border-radius: 1.4rem;
+    background-color: #ff3535;
+}
+
+.cancel-button:hover {
+    background-color: #c00000;
+    cursor: pointer;
+}
+
+.sidebar-message {
+    display: inline-block;
+    width: 40%;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
+    background-color: #a7ff9f;
+    color: #006f18;
+    text-align: center;
+    font-size: 1.3rem;
+    animation: fadeOut 3s forwards;
+}
+
+.sidebar-deleted-message {
+    display: inline-block;
+    width: 40%;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
+    background-color: #ffcdcd;
+    color: #a70000;
+    text-align: center;
+    font-size: 1.3rem;
+    animation: fadeOut 3s forwards;
+}
+
+.sidebar-archived-message {
+    display: inline-block;
+    width: 40%;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
+    background-color: #c1c6ff;
+    color: #000e88;
+    text-align: center;
+    font-size: 1.3rem;
+    animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/*=================================================================*/
+
+.sidebar-footer {
+    margin: 5rem 0 0 2rem;
+    font-size: 1.5rem;
+}

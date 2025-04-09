@@ -1,0 +1,89 @@
+/* Variables */
+
+:root {
+    --email-color: rgb(255, 105, 105);
+    --linkedin-color: rgb(50, 183, 255);
+}
+
+/* Footer */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgb(34, 34, 34);
+    padding: 0rem;
+    text-align: center;
+}
+
+/* Contact */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info > * {
+    margin: 1.5rem 0;
+}
+
+.contact-info > *:last-child {
+    margin-top: 0;
+}
+
+@media (min-width: 1500px) {
+    .contact-info {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 30rem;
+    }
+
+    .contact-info > * {
+        margin: 0;
+    }
+}
+
+.contact-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Email */
+
+.email-icon {
+    color: var(--email-color);
+    padding-right: 1rem;
+}
+
+.contact-email a {
+    color: white;
+}
+
+.contact-email a:hover {
+    color: var(--email-color);
+}
+
+/* LinkedIn */
+
+.linkedin-icon {
+    color: var(--linkedin-color);
+    padding-right: 1rem;
+}
+
+.contact-linkedin a {
+    color: white;
+}
+
+.contact-linkedin a:hover {
+    color: var(--linkedin-color);
+}
+
+/* React text */
+
+.react-icon {
+    color: rgb(97, 218, 251);
+    padding-right: 1rem;
+}
