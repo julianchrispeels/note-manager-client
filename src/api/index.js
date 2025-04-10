@@ -2,8 +2,6 @@ const apiUrl = process.env.REACT_APP_API_URL;
 
 const endpoint = `${apiUrl}/api/v1/notes`;
 
-console.log('Endpoint:', endpoint);
-
 const headers = {
     'Content-Type': 'application/json',
 }
